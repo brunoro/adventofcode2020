@@ -5,7 +5,7 @@ mod tests {
     #[test]
     fn example() {
         let nums = vec![1721, 979, 366, 299, 675, 1456];
-        let (a, b) = super::two_numbers_with_sum(nums, 2020);
+        let (a, b) = super::two_numbers_with_sum(&nums, 2020);
         assert_eq!(a, 1721);
         assert_eq!(b, 299);
     }

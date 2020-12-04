@@ -1,5 +1,10 @@
+#[macro_use] extern crate lazy_static;
+
 mod day01;
+mod day02;
 
 fn main() {
-    day01::run();
+    let days = [day01::run, day02::run];
+    let day = 2;
+    days[day - 1]();
 }
